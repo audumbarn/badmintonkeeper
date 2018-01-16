@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/teama_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:text="-"
+                android:textSize="56sp" />
+
+            <TextView
+                android:id="@+id/teamb_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/white">
+
+            <Button
+                android:id="@+id/teamAButton"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addTeamAPoint"
+                android:text="Team A Point"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/teamBButton"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addTeamBPoint"
+                android:text="team b point"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="2"
+                    android:background="@android:color/white"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Games"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Game1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Game2"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Game3"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="2"
+                    android:background="@android:color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="@string/team_a_name"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/games_won_by_A"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/game00"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="0"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:id="@+id/game10"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text=" 0"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/game20"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text=" 0"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="2"
+                    android:background="@android:color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="@string/team_b_name"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/games_won_by_B"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/game01"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="0"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/game11"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text=" 0"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/game21"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text=" 0"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick="resetScores"
+            android:text="reset"
+            android:theme="@style/ResetButtonTheme" />
+        <TextView
+            android:id="@+id/serve_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A0 serves from Right"
+            android:textSize="24sp"
+            android:layout_marginLeft="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

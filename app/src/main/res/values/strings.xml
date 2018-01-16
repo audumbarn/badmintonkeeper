@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Badminton Score Keeper</string>
+    <string name="team_a_name">Team A</string>
+    <string name="team_b_name">Team B</string>
+</resources>
